@@ -1,0 +1,153 @@
+/* Reset Asas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Warna Tema */
+:root {
+  --primary: #6a0dad; /* Purple */
+  --secondary: #007bff; /* Blue */
+  --light: #f4f4f4;
+  --dark: #222;
+  --danger: #dc3545;
+  --success: #28a745;
+}
+
+/* Badan Laman */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 20px;
+}
+
+/* Container Umum */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Tajuk dan Header */
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+/* Butang */
+button,
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--secondary);
+}
+
+/* Input */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Label */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Jadual */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Alert */
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.alert-success {
+  background-color: var(--success);
+  color: white;
+}
+
+/* Navigasi */
+.navbar {
+  background-color: var(--primary);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 100%;
+  }
+}
